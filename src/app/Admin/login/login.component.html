@@ -1,0 +1,18 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+<div fxLayout="column" class="field" fxLayoutAlign="center center" >
+  <div style="text-align: center;color:aliceblue;padding-top: 20px;">
+    <h3>Welcome to TazaBajar</h3>
+  </div>
+  <form  [formGroup]="form" >
+    <div style="align-items: center;text-align: center;padding-top: 50px;font-size: 20px;color: white;">
+    <mat-label style="margin-left: 35px;">Email </mat-label>
+
+<input style="height: 25px;font-size:20px "   formControlName="email" required > <br> <br> <br> 
+<mat-label> Password </mat-label>
+<input style="font-size:20px ;"  type="password" formControlName="password" > <br> <br>
+<button mat-raised-button color="primary" type="submit" (click)="submit()">submit</button>
+</div>
+  </form>
+
+</div>
+</div>
